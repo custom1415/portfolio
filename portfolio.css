@@ -2,16 +2,18 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-size: 14px;
 }
 body {
   min-height: 300vh;
   font-family: "Poppins light";
   /* overflow: hidden; */
 }
+
 .header {
   width: 100%;
   position: relative;
-  
+  background-color: white;
   height: 7em;
   margin-bottom: 20px;
 }
@@ -25,7 +27,7 @@ nav {
 }
 nav span {
   font-size: 4rem;
-  color: rgb(72, 11, 227);
+  color: #0693e3;
 }
 /* nav ul {
   display: flex;
@@ -40,7 +42,7 @@ nav ul li {
 } */
 a {
   text-decoration: none;
-  color: rgb(72, 11, 227);
+  color: #0693e3;
 }
 .logo {
   font-size: 3rem;
@@ -81,9 +83,8 @@ a {
 .sidenav.active {
   width: 100vw;
 }
-.sidenav.active ul li{
+.sidenav.active ul li {
   opacity: 1;
- 
 }
 .sidenav a {
   font-size: 3rem;
@@ -93,16 +94,16 @@ a {
 .bar-container {
   display: inline-block;
   cursor: pointer;
-position: relative;
+  position: relative;
 
-z-index: 2000;
+  z-index: 2000;
 }
 .bar-container .bar1,
 .bar-container .bar2,
 .bar-container .bar3 {
   width: 28px;
   height: 6px;
-  background-color:rgb(72, 11, 227);
+  background-color: #0693e3;
   margin: 6px 0;
   -webkit-transition: 0.4s;
   transition: 0.4s;
@@ -133,12 +134,18 @@ z-index: 2000;
 .intro {
   width: 100%;
 
-  height: 100vh;
+  height: 90vh;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   padding-bottom: 8em;
+  position: relative;
+
+ background: url(./svg\ \(2\).png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom;
 }
 
 .intro h1 {
@@ -148,14 +155,21 @@ z-index: 2000;
 
   text-align: center;
   padding: 0 1em;
-  padding-bottom: .6em;
+  padding-bottom: 0.6em;
 }
 
 .cm {
-  color: rgb(72, 11, 227);
+  color: #0693e3;
+  /* font-size: 7rem; */
+  display: inline-block;
+  transform: scale(1.2);
+  transform: translateX(-16px);
 }
-.intro h1 span {
-  color: rgb(72, 11, 227);
+.intro .dot {
+  color: #0693e3;
+
+  display: inline-block;
+  transform: scale(1.2);
 }
 .intro p {
   text-align: center;
@@ -171,25 +185,26 @@ z-index: 2000;
 .btn-container button {
   outline: none;
   border: none;
+  box-shadow:0px 4px 15px 4px #0692e3a8;
   padding: 0.8em 1.2em;
   font-size: 1.2rem;
-  background-color: rgb(72, 11, 227);
-  color: white;
+background-color:#0693e3;
+
+color: white;
   border-radius: 27px;
   border: 3px solid transparent;
   text-align: center;
   margin: 1em;
   transition: 0.6s;
-/* letter-spacing: 1.3px; */
-
+  /* letter-spacing: 1.3px; */
 }
 button:nth-child(2) {
   width: 6.5em;
 }
 button:hover {
-  border: 3px solid rgb(72, 11, 227);
+  border: 3px solid #0693e3;
   background-color: white;
-  color: rgb(72, 11, 227);
+  color: #0693e3;
 }
 /*  */
 /*  */
