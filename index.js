@@ -13,7 +13,7 @@ console.log(section);
 const showLoader = () => {
   if (!image.completed) {
     section.forEach((s) => (s.style.display = "none"));
-    console.log("hi");
+    loader.style.display= "absolute";
   }
 
   loader.style.display = "none";
