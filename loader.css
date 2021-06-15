@@ -63,3 +63,8 @@
     transform: scale(0.9);
   }
 }
+@media (max-width:768px){
+  .lds-heart{
+    transform: scale(1.5) rotate(45deg);
+  }
+}
