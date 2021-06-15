@@ -39,6 +39,7 @@ const container = document.querySelector(".container");
 const transform = (cardNum) => {
   cardNum.style.transform = "scale(1)";
   cardNum.style.opacity = "1";
+  console.log('hi');
 };
 const deform = (cardNum) => {
   cardNum.style.transform = "scale(0)";
@@ -62,4 +63,4 @@ const showModal = (e) => {
     deform(cardTwo);
   }
 };
-content.addEventListener("click", showModal);
+container.addEventListener("click", showModal);
