@@ -8,8 +8,8 @@
 }
 .lds-heart {
   position: absolute;
-  top: 50%;
-  left: 45%;
+  top: 40%;
+  left: 40%;
   width: 200px;
   height: 200px;
   transform: translate(-45%, -50%);
