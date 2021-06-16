@@ -271,7 +271,7 @@ section {
 /*  */
 .about-me {
   padding: 4em 0;
-  height: 100%;
+  height: 100vh;
   width: 100%;
   position: relative;
 }
@@ -298,7 +298,8 @@ section {
 .info {
   margin: 4em;
   margin-top: 3em;
-  background-color: rgba(0, 0, 0, 0.078);
+  /* background-color: rgba(0, 0, 0, 0.078); */
+  background-color: #fff;
   /* background-color: white; */
   display: flex;
   justify-content: center;
@@ -313,7 +314,7 @@ section {
   content: "";
   width: 25%;
   height: 100%;
-  z-index: -1;
+  z-index: 1;
   top: 0;
   right: 0;
   background-color: #7f36de;
@@ -322,15 +323,19 @@ section {
   width: 50%;
   color: #7f36de;
   margin-right: 3em; /* border: 3px solid black; */
-  height: 600px;
-  display: grid;
-  place-items: center;
-  padding: 0 2em;
-  position: relative;
+  height: 100%;
+
+  padding: 4em 2em;
+  /* position: relative; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .information p {
   font-weight: bolder;
   font-size: 1.4rem;
+  height: 80%;
 }
 .info .imgBox {
   /* border: 3px solid black; */
@@ -349,6 +354,51 @@ section {
   z-index: 2;
   object-fit: cover;
   border: 6px solid white;
+}
+.btn-container {
+  width: 100%;
+  height: 20%;
+  /* display: none; */
+  display: flex;
+
+  align-items: center;
+  margin-top: 3em;
+}
+.btn-container button {
+  font-family: Poppins, "serif";
+  background-color: #8a30ff;
+  color: #fff;
+  border: none;
+  outline: none;
+  border-radius: 25px;
+  font-weight: lighter;
+  letter-spacing: 1.4px;
+  font-size: 1.1rem;
+  padding: 0.9em 1.1em;
+  margin-right: 1em;
+  cursor: pointer;
+  box-shadow: 0px 3px 16px 4px #7f36de8d;
+}
+.scroll-down {
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+
+  z-index: 10000;
+}
+.fas {
+  font-size: 3rem;
+  color: white;
+  cursor: pointer;
+  animation: scroll-anim 0.8s alternate infinite;
+}
+@keyframes scroll-anim {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(10px);
+  }
 }
 @media (max-width: 1068px) {
   * {
@@ -377,13 +427,25 @@ section {
     flex-direction: column-reverse;
     justify-content: center;
     padding-bottom: 4em;
-    height: 100%;
   }
   .information {
     width: 100%;
     margin: 0;
     margin-top: 2em;
     height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .btn-container {
+    justify-content: center;
+    margin-top: 3em;
+  }
+  .btn-container button {
+    /* padding: 1.8em 2em; */
+    font-size: 1.4rem;
+    margin: 0 2em;
   }
   .information p {
     text-align: center;
@@ -402,12 +464,10 @@ section {
     top: 0;
     left: 0;
     width: 100%;
-    height: 30%;
-
-    z-index: -1;
+    height: 20%;
   }
   .social {
-    bottom: 5%;
+    bottom: 15%;
   }
   .about-me::before {
     clip-path: circle(160px at top right);
@@ -415,10 +475,7 @@ section {
 
     /* display: none; */
   }
-  .info::before {
-    /* display: none; */
-    z-index: -1;
-  }
+
   .social-icons {
     /* width: 80%; */
     justify-content: space-around;
