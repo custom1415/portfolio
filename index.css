@@ -373,7 +373,7 @@ section {
   border-radius: 25px;
   font-weight: lighter;
   letter-spacing: 1.4px;
-  font-size: .8rem;
+  font-size: 0.8rem;
   padding: 0.9em 1.1em;
   margin-right: 1em;
   cursor: pointer;
@@ -428,7 +428,7 @@ section {
   .information {
     width: 100%;
     margin: 0;
-    margin-top: 2em;
+    /* margin-top: 2em; */
     height: 50%;
     display: flex;
     flex-direction: column;
@@ -490,7 +490,7 @@ section {
 }
 @media (max-width: 700px) {
   * {
-    font-size: 12px;
+    font-size: 10px;
   }
   .header {
     padding-top: 1em;
@@ -499,7 +499,7 @@ section {
     width: 19em;
   }
   .model .content .imgBox {
-    width: 40%;
+    width: 50%;
   }
 }
 @media (max-width: 600px) {
@@ -516,7 +516,7 @@ section {
   }
 
   .model .content .imgBox {
-    width: 40%;
+    width: 80%;
   }
 
   .sidenav {
