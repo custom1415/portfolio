@@ -214,12 +214,12 @@ section {
 .card-one h1 {
   font-size: 4rem;
 }
-.card-one:hover {
+/* .card-one:hover {
   transform-style: preserve-3d;
   transform: translate3d(180deg);
   perspective: 1000px;
   cursor: pointer;
-}
+} */
 .card-two {
   top: 20%;
   left: 20%;
@@ -271,6 +271,7 @@ section {
 /*  */
 .about-me {
   padding: 4em 0;
+  height: 100%;
   width: 100%;
   position: relative;
 }
@@ -298,7 +299,7 @@ section {
   margin: 4em;
   margin-top: 3em;
   background-color: rgba(0, 0, 0, 0.078);
-  background-color: white;
+  /* background-color: white; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -312,7 +313,7 @@ section {
   content: "";
   width: 25%;
   height: 100%;
-  z-index: 1;
+  z-index: -1;
   top: 0;
   right: 0;
   background-color: #7f36de;
@@ -324,10 +325,12 @@ section {
   height: 600px;
   display: grid;
   place-items: center;
-  font-weight: bolder;
-  font-size: 1.4rem;
   padding: 0 2em;
   position: relative;
+}
+.information p {
+  font-weight: bolder;
+  font-size: 1.4rem;
 }
 .info .imgBox {
   /* border: 3px solid black; */
@@ -335,12 +338,16 @@ section {
   display: grid;
   height: 100%;
   place-items: center;
-  z-index: 2;
+  /* z-index: 2; */
+  margin: 2em;
   position: relative;
 }
 .info .imgBox img {
   width: 100%;
   height: 100%;
+  position: relative;
+  z-index: 2;
+  object-fit: cover;
   border: 6px solid white;
 }
 @media (max-width: 1068px) {
@@ -366,14 +373,51 @@ section {
   * {
     font-size: 12px;
   }
+  .info {
+    flex-direction: column-reverse;
+    justify-content: center;
+    padding-bottom: 4em;
+    height: 100%;
+  }
+  .information {
+    width: 100%;
+    margin: 0;
+    margin-top: 2em;
+    height: 50%;
+  }
+  .information p {
+    text-align: center;
+    font-size: 2rem;
+  }
+  .info .imgBox {
+    height: 30%;
+    width: 160px;
+    padding-top: 2em;
+  }
+  .info .imgBox img {
+    height: 100%;
+    width: 100%;
+  }
+  .info::before {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 30%;
+
+    z-index: -1;
+  }
   .social {
     bottom: 5%;
   }
   .about-me::before {
     clip-path: circle(160px at top right);
+    /* clip-path: none; */
+
+    /* display: none; */
   }
-  .info::before{
-  display: none;
+  .info::before {
+    /* display: none; */
+    z-index: -1;
   }
   .social-icons {
     /* width: 80%; */
@@ -410,14 +454,6 @@ section {
   }
 }
 @media (max-width: 500px) {
-  .information {
-    width: 100%;
-    margin: 0;
-    text-align: center;
-  }
-  .info .imgBox {
-    display: none;
-  }
 }
 
 @media (max-width: 400px) {
