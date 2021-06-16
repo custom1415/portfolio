@@ -296,7 +296,7 @@ section {
   border-bottom: 0.4rem solid #a770ef;
 }
 .info {
-  margin: 4em;
+  /* margin: 4em; */
   margin-top: 3em;
   /* background-color: rgba(0, 0, 0, 0.078); */
   background-color: #fff;
@@ -446,7 +446,7 @@ section {
   }
   .information p {
     text-align: center;
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
   .info .imgBox {
     height: 30%;
@@ -485,12 +485,12 @@ section {
     margin-left: 0.5em;
   }
   .model .content .imgBox {
-    width: 70%;
+    width: 50%;
   }
 }
 @media (max-width: 700px) {
   * {
-    font-size: 9px;
+    font-size: 12px;
   }
   .header {
     padding-top: 1em;
@@ -499,12 +499,12 @@ section {
     width: 19em;
   }
   .model .content .imgBox {
-    width: 60%;
+    width: 40%;
   }
 }
 @media (max-width: 600px) {
   * {
-    font-size: 8px;
+    font-size: 12px;
   }
 }
 @media (max-width: 500px) {
@@ -512,11 +512,11 @@ section {
 
 @media (max-width: 400px) {
   * {
-    font-size: 7px;
+    font-size: 12px;
   }
 
   .model .content .imgBox {
-    width: 80%;
+    width: 40%;
   }
 
   .sidenav {
