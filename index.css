@@ -368,6 +368,7 @@ section {
   font-family: Poppins, "serif";
   background-color: #8a30ff;
   color: #fff;
+  white-space:nowrap;
   border: none;
   outline: none;
   border-radius: 25px;
