@@ -30,8 +30,6 @@ nav {
   width: 100%;
   justify-content: space-between;
   padding: 0 4em;
-
- 
 }
 
 a {
@@ -39,16 +37,16 @@ a {
 }
 .logo {
   font-size: 3rem;
-  color: white; 
+  color: white;
   position: relative;
-  z-index:99;
-
+  z-index: 99;
 }
 /* 
    */
 /*  */
 /* 
     /* */
+
 /* */
 /*  */
 
@@ -145,8 +143,7 @@ section {
   display: grid;
   place-items: center;
 
-  position: 
-  relative;
+  position: relative;
   /* background-image: linear-gradient(            #ffafbd, #ffc3a0); */
   background-image: linear-gradient(#a770ef, #cf8bf3);
 }
@@ -493,8 +490,7 @@ section {
 
     /* display: none; */
   }
-  .scroll-down{
-
+  .scroll-down {
     bottom: 5%;
   }
 
