@@ -1,4 +1,3 @@
-
 * {
   box-sizing: border-box;
   margin: 0;
@@ -225,8 +224,11 @@ section {
 /*  */
 /*  */
 /*  */
+.abt {
+  height: 100vh;
+}
 .about-me {
-  padding: 4em 0;
+  padding: 8em 0;
   height: 100%;
   width: 100%;
   position: relative;
@@ -513,8 +515,7 @@ section {
     width: 80vw;
     /* margin: 0; */
   }
-  .card p{
-    
+  .card p {
     font-size: 1rem;
   }
 }
@@ -522,7 +523,6 @@ section {
   * {
     font-size: 12px;
   }
- 
 }
 @media (max-width: 500px) {
 }
