@@ -28,7 +28,7 @@ nav {
   display: flex;
   width: 100%;
   justify-content: space-between;
-  padding: 0 4em;
+  padding: 0 2em;
 }
 
 a {
@@ -388,7 +388,7 @@ section {
 .card p {
   margin-top: 1.4em;
   text-align: center;
-  font-size: 1.3rem;
+  font-size: 1rem;
 }
 .fa-code {
   font-size: 3rem;
