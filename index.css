@@ -47,17 +47,21 @@ a {
 /* */
 /*  */
 
+
 .sidenav {
   transition: width 0.6s;
+  width: 0px;
+  height: 100vh;
   position: fixed;
-  height: 200vh;
-  top: 0;left: 0;
-  width: 0%;
-  background-color: white;
-  display: grid;
-  place-items: center;
+  top: 0;
+  left: 0;
+  box-shadow: 3px 0 8px 0 rgba(0, 0, 0, 0.2);
   z-index: 100;
-  
+  background-color: rgb(255, 255, 255);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .sidenav ul li {
@@ -226,9 +230,7 @@ section {
 /*  */
 /*  */
 /*  */
-.abt {
-  height: 100vh;
-}
+
 .about-me {
   padding: 8em 0;
   height: 100%;
@@ -395,8 +397,6 @@ section {
   text-align: center;
   font-size: 1rem;
 }
-
-
 
 @keyframes scroll-anim {
   from {
