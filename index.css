@@ -167,7 +167,7 @@ section {
   object-fit: cover;
 }
 .model .content .imgBox {
-  width:35%;
+  width: 35%;
   height: 100%;
 }
 /* 
@@ -233,7 +233,7 @@ section {
 /*  */
 /*  */
 .social {
-  bottom: 5%;
+  bottom: 4%;
   position: absolute;
   left: 2%;
   /* height: 100%; */
@@ -253,16 +253,19 @@ section {
 }
 .social-icons li {
   list-style: none;
-  margin: 0 0.8em;
+  margin: 0 2em;
 
-  padding: 0.4em 0.6em;
+  /* padding: 0.4em 0.6em; */
   /* width: 150px; */
   text-align: center;
-  border: 3px solid white;
+  /* border: 3px solid white; */
 }
 .social-icons li a {
   color: white;
   font-size: 1.3rem;
+}
+.social-icons i {
+  font-size: 3rem;
 }
 /*  */
 /*  */
@@ -382,7 +385,7 @@ section {
 }
 .scroll-down {
   position: absolute;
-  bottom: 5%;
+  bottom: 2%;
   left: 50%;
 
   /* z-index: 100; */
@@ -469,7 +472,7 @@ section {
     height: 20%;
   }
   .social {
-    bottom: 15%;
+    bottom: 10%;
   }
   .about-me::before {
     clip-path: circle(160px at top right);
@@ -480,8 +483,8 @@ section {
 
   .social-icons {
     /* width: 80%; */
-    justify-content: space-around;
-    margin: 0;
+    /* justify-content: space-around; */
+    /* margin: 0; */
   }
   .content {
     margin-bottom: 8em;
@@ -497,11 +500,8 @@ section {
   * {
     font-size: 10px;
   }
-   nav{
-    padding:0 2em;
-  }
   .header {
-    padding-top: .8em;
+    padding-top: 1em;
   }
   .card {
     width: 19em;
@@ -516,7 +516,7 @@ section {
   }
 }
 @media (max-width: 500px) {
- }
+}
 
 @media (max-width: 400px) {
   * {
