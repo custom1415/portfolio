@@ -22,6 +22,19 @@ const showLoader = () => {
 };
 window.addEventListener("load", showLoader);
 
-const aboutMe = document.querySelector('.about-me')
-const chevDown = document.querySelector('.fas')
-chevDown.addEventListener('click',()=>aboutMe.scrollIntoView({behavior: "smooth"}))
+const aboutMe = document.querySelector(".about-me");
+const chevDown = document.querySelector(".fas");
+chevDown.addEventListener("click", () =>
+  aboutMe.scrollIntoView({ behavior: "smooth" })
+);
+const links = document.querySelectorAll(".sidenav ul li ");
+
+links.forEach((link) => link.addEventListener("click", toggleSideNav));
+
+const abtLink = document.querySelector(".sidenav ul .abt");
+console.log(abtLink);
+abtLink.addEventListener("click", () =>
+  setTimeout(() => {
+    aboutMe.scrollIntoView({behavior:'smooth'});
+  }, 400)
+);
