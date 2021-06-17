@@ -482,7 +482,7 @@ section {
     height: 20%;
   }
   .social {
-    bottom: 18%;
+    bottom: 15%;
   }
   .about-me::before {
     clip-path: circle(160px at top right);
@@ -491,14 +491,9 @@ section {
     /* display: none; */
   }
   .scroll-down {
-    bottom: 9%;
+    bottom: 5%;
   }
 
-  .social-icons {
-    /* width: 80%; */
-    /* justify-content: space-around; */
-    /* margin: 0; */
-  }
   .content {
     margin-bottom: 8em;
   }
