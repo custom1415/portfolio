@@ -4,12 +4,13 @@
   background-color: white;
   z-index: 1000;
   position: fixed;
-  /* display: none; */
+  display: none;
 }
 .lds-heart {
   position: absolute;
-  top: 40%;
-  left: 40%;
+  top: 50%;
+
+  left: 45%;
   width: 200px;
   height: 200px;
   transform: translate(-45%, -50%);
@@ -63,8 +64,10 @@
     transform: scale(0.9);
   }
 }
-@media (max-width:768px){
-  .lds-heart{
+@media (max-width: 768px) {
+  .lds-heart {
+    top: 40%;
+    left: 40%;
     transform: scale(1.5) rotate(45deg);
   }
 }
