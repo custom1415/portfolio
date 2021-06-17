@@ -394,6 +394,7 @@ section {
   font-size: 3rem;
   color: white;
   cursor: pointer;
+  user-select:none;
   animation: scroll-anim 0.8s alternate infinite;
 }
 @keyframes scroll-anim {
