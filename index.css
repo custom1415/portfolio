@@ -497,8 +497,11 @@ section {
   * {
     font-size: 10px;
   }
+   nav{
+    padding:0 2em;
+  }
   .header {
-    padding-top: 1em;
+    padding-top: .8em;
   }
   .card {
     width: 19em;
@@ -513,9 +516,7 @@ section {
   }
 }
 @media (max-width: 500px) {
-  nav{
-    padding:0 2em;
-}
+ }
 
 @media (max-width: 400px) {
   * {
