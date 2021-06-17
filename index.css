@@ -154,7 +154,7 @@ section {
   /* padding-left: 1em; */
 }
 .content h1 {
-  font-size: 5rem;
+  font-size: 6rem;
   color: white;
   font-weight: bolder;
 
@@ -167,7 +167,7 @@ section {
   object-fit: cover;
 }
 .model .content .imgBox {
-  width: 40%;
+  width:35%;
   height: 100%;
 }
 /* 
@@ -421,6 +421,7 @@ section {
   * {
     font-size: 10px;
   }
+
   .info {
     flex-direction: column-reverse;
     justify-content: center;
@@ -489,7 +490,7 @@ section {
     margin-left: 0.5em;
   }
   .model .content .imgBox {
-    width: 50%;
+    width: 40%;
   }
 }
 @media (max-width: 700px) {
