@@ -6,11 +6,12 @@
 }
 body {
   max-width: 100vw;
-  min-height: 700vh;
+  min-height: 100vh;
   /* font-family: "Poppins light"; */
   font-family: "Poppins", sans-serif;
   /* overflow: hidden; */
   scroll-behavior: smooth;
+  position: relative;
 }
 
 .header {
@@ -48,31 +49,32 @@ a {
 
 .sidenav {
   transition: width 0.6s;
-  width: 0;
-  height: 100vh;
   position: fixed;
-  top: 0;
-  left: 0;
-  box-shadow: 3px 0 8px 0 rgba(0, 0, 0, 0.2);
+  height: 200vh;
+  top: 0;left: 0;
+  width: 0%;
+  background-color: white;
+  display: grid;
+  place-items: center;
   z-index: 100;
-  background-color: rgb(255, 255, 255);
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  
 }
+
 .sidenav ul li {
+  transform: translateX(-1000%);
   opacity: 0;
   list-style: none;
   cursor: pointer;
 
   margin-bottom: 1em;
+  transition: 0.6s;
 }
 
 .sidenav.active {
   width: 100%;
 }
 .sidenav.active ul li {
+  transform: translateX(0);
   opacity: 1;
   color: #0693e3;
   font-size: 3rem;
@@ -393,9 +395,8 @@ section {
   text-align: center;
   font-size: 1rem;
 }
-.fa-code {
-  font-size: 3rem;
-}
+
+
 
 @keyframes scroll-anim {
   from {
