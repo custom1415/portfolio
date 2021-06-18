@@ -6,10 +6,10 @@
 }
 body {
   max-width: 100vw;
-  min-height: 100vh;
+  min-height: 700vh;
   /* font-family: "Poppins light"; */
   font-family: "Poppins", sans-serif;
-  /* overflow: hidden; */
+  overflow: hidden;
   scroll-behavior: smooth;
   position: relative;
 }
@@ -22,6 +22,7 @@ body {
   left: 0;
   height: 7em;
   padding-top: 2em;
+  display: unset;
 }
 
 nav {
@@ -133,7 +134,11 @@ a {
    /* */
 section {
   width: 100%;
-  height: 100vh;
+  height: 100%;
+  display: grid;
+  place-items: center;
+  place-content: center;
+  min-height: 100vh;
 }
 .intro {
   width: 100%;
@@ -141,7 +146,6 @@ section {
   background-repeat: no-repeat;
   display: grid;
   place-items: center;
-
   position: relative;
   /* background-image: linear-gradient(            #ffafbd, #ffc3a0); */
   background-image: linear-gradient(#a770ef, #cf8bf3);
@@ -205,7 +209,7 @@ section {
   /* transform: translateY(-50%); */
 }
 
-.social-icons {
+.social .social-icons {
   display: flex;
   /* flex-direction: column; */
   width: 100%;
@@ -213,7 +217,7 @@ section {
   /* justify-content: space-evenly; */
   align-items: center;
 }
-.social-icons li {
+.social .social-icons li {
   list-style: none;
   margin: 0 2em;
 
@@ -222,11 +226,11 @@ section {
   text-align: center;
   /* border: 3px solid white; */
 }
-.social-icons li a {
+.social .social-icons li a {
   color: white;
   font-size: 1.3rem;
 }
-.social-icons i {
+.social .social-icons i {
   font-size: 3rem;
 }
 /*  */
@@ -236,7 +240,7 @@ section {
 /*  */
 
 .about-me {
-  padding: 8em 0;
+  padding: 0;
   height: 100%;
   min-height: 100vh;
   width: 100%;
@@ -260,7 +264,7 @@ section {
 .about-me h1 span {
   font-size: 2.6rem;
   color: #7f36de;
-  border-bottom: 0.4rem solid #a770ef;
+  /* border-bottom: 0.4rem solid #a770ef; */
 }
 .info {
   /* margin: 4em; */
@@ -364,7 +368,8 @@ section {
 .services {
   width: 100%;
 
-  height: 100vh;
+  height: 100%;
+  /* min-height: 100vh; */
   /* margin-top: 5em; */
 }
 .services h1 {
@@ -372,14 +377,16 @@ section {
 }
 .services h1 span {
   color: #7f36de;
-  border-bottom: 4px solid #7f36de;
-  font-size: 2.6rem;
+  /* border-bottom: 4px solid #7f36de; */
+  font-size: 3rem;
 }
 
 .services .card-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+
+  align-items: center;
   padding: 0 2em;
   margin-top: 3em;
 }
@@ -403,6 +410,8 @@ section {
   text-align: center;
   font-size: 1rem;
 }
+/*  */
+/*  */
 
 @keyframes scroll-anim {
   from {
@@ -412,6 +421,180 @@ section {
     transform: translateY(10px);
   }
 }
+.contact {
+  padding: 8em 0;
+  overflow: hidden;
+  /* max-width: 80vw; */
+}
+.contact h1 {
+  text-align: center;
+}
+.contact h1 span {
+  font-size: 4rem;
+  color: #7f36de;
+}
+
+.contact .contact-card {
+  margin: 0 auto;
+  margin-top: 4em;
+  height: 100%;
+  width: 90vw;
+
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  background-color: #fff;
+
+  box-shadow: 3px 3px 16px 0px #7925e874;
+  padding: 2em 0 2em 4em;
+
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.contact-card h1 {
+  font-size: 3rem;
+  text-align: left;
+}
+.contact-card p {
+  font-size: 1.2rem;
+  margin: 0.8em 0;
+}
+form {
+  font-family: Poppins, serif;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+form label input {
+  border: none;
+  outline: none;
+  width: 100%;
+  border-bottom: 2px solid grey;
+  font-size: 1.5rem;
+  margin: 2em 0;
+  padding-bottom: 0.8em;
+  caret-color: #7f36de;
+}
+form button {
+  padding: 0.8em 1em;
+  border-radius: 27px;
+  border: none;
+  outline: none;
+  background-color: #7f36de;
+  color: white;
+  font-size: 1.3rem;
+}
+.contacts-social {
+  position: absolute;
+  bottom: 2%;
+  right: 0%;
+  z-index: 3;
+
+  width: 100%;
+}
+.contact-card button:hover {
+  background-color: #8a30ff;
+}
+.contact-card ul {
+  display: flex;
+  justify-content: space-evenly;
+  align-self: center;
+}
+
+.contacts-social ul li {
+  list-style: none;
+}
+.contacts-social ul li a i {
+  font-size: 1.5rem;
+  color: white;
+}
+.contact-card .background {
+  position: absolute;
+  content: "";
+  max-width: 25%;
+  width: 25%;
+  height: 100%;
+  z-index: 1;
+  top: 0;
+  right: 0;
+
+  background-color: #8a30ff;
+}
+.contact-card .float {
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  right: 0;
+  background-color: #fff;
+  height: 80%;
+  width: 30%;
+  box-shadow: 3px 3px 16px 0px #7925e874;
+  z-index: 2;
+  padding: 2em;
+  overflow: hidden;
+}
+.float .container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-evenly;
+}
+.float .container div span {
+  font-size: 1.3rem;
+  margin-left: 0.5em;
+}
+.float .container div i {
+  font-size: 1.6rem;
+}
+.contact-bar-container {
+  position: absolute;
+  top: 50%;
+  transform: translate(-7%, -50%);
+  left: -7%;
+  background-color: #7f36deb1;
+  padding: 0.7em;
+}
+.contact-bar-container .bar1,
+.contact-bar-container .bar2,
+.contact-bar-container .bar3 {
+  width: 28px;
+  height: 6px;
+  background-color: #ffffff;
+  margin: 6px 0;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+/*  */
+/*  */
+
+/* .projects {
+  width: 100%;
+  height: 100%;
+}
+.prj-card {
+}
+.prj-card h1 {
+  text-align: center;
+}
+.prj-card span {
+  position: relative;
+  font-size: 3rem;
+}
+
+.prj-card h1 span::before {
+  position: absolute;
+  top: 65%;
+  z-index: -1;
+  left: 0;
+  content: "";
+
+  width: 100%;
+  border-bottom: 8px solid yellow;
+} */
+
 @media (max-width: 1068px) {
   * {
     font-size: 13px;
@@ -428,9 +611,27 @@ section {
     bottom: 8%;
   }
 }
+@media (max-width: 800px) {
+  .contact .float {
+    transform: scaleX(0);
+  }
+  .contact .contact-card {
+    padding-left: 3rem;
+  }
+  .contact .contact-card p {
+    width: 60%;
+  }
+  .contact-card h1 {
+    width: 60%;
+    margin-bottom: .5em;
+  }
+}
 @media (max-width: 768px) {
   * {
     font-size: 10px;
+  }
+  .about-me {
+    padding: 4em 0;
   }
   .content h1 {
     line-height: 1em;
