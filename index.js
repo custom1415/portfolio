@@ -1,9 +1,5 @@
 const barContainer = document.querySelector(".bar-container");
 
-const cardOne = document.querySelector(".card-one");
-const cardTwo = document.querySelector(".card-two");
-let shouldModalBeShown = true;
-
 const toggleSideNav = () => {
   const sidenav = document.querySelector(".sidenav");
   sidenav.classList.toggle("active");
@@ -29,12 +25,14 @@ chevDown.addEventListener("click", () =>
 );
 const links = document.querySelectorAll(".sidenav ul li ");
 
-links.forEach((link) => link.addEventListener("click", toggleSideNav));
-
-const abtLink = document.querySelector(".sidenav ul .abt");
-console.log(abtLink);
-abtLink.addEventListener("click", () =>
-  setTimeout(() => {
-    aboutMe.scrollIntoView({behavior:'smooth'});
-  }, 400)
+links.forEach((link) =>
+  link.addEventListener("click", () => {
+    toggleSideNav();
+    setTimeout(() => {
+      document
+        .querySelector(`.${link.dataset.link}`)
+        .scrollIntoView({ behavior: "smooth" });
+    }, 400);
+  })
 );
+
