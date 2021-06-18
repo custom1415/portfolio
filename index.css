@@ -9,7 +9,7 @@ body {
   min-height: 700vh;
   /* font-family: "Poppins light"; */
   font-family: "Poppins", sans-serif;
-  overflow: hidden;
+  overflow-x: hidden;
   scroll-behavior: smooth;
   position: relative;
 }
