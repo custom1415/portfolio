@@ -50,7 +50,6 @@ a {
 /* */
 /*  */
 
-
 .sidenav {
   transition: width 0.6s;
   width: 0px;
@@ -239,6 +238,7 @@ section {
 .about-me {
   padding: 8em 0;
   height: 100%;
+  min-height: 100vh;
   width: 100%;
   position: relative;
 }
@@ -364,7 +364,8 @@ section {
 .services {
   width: 100%;
 
-  height: 100%;
+  height: 100vh;
+  /* margin-top: 5em; */
 }
 .services h1 {
   text-align: center;
@@ -434,7 +435,12 @@ section {
   .content h1 {
     line-height: 1em;
   }
-
+  nav {
+    padding: 0 2em;
+  }
+  .logo {
+    font-size: 2.4rem;
+  }
   .info {
     flex-direction: column-reverse;
     justify-content: center;
