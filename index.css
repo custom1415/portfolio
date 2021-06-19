@@ -6,7 +6,7 @@
 }
 body {
   max-width: 100vw;
-  min-height: 700vh;
+  min-height: 100vh;
   /* font-family: "Poppins light"; */
   font-family: "Poppins", sans-serif;
   overflow-x: hidden;
@@ -59,7 +59,7 @@ a {
   top: 0;
   left: 0;
   box-shadow: 3px 0 8px 0 rgba(0, 0, 0, 0.2);
-  z-index: 100;
+  z-index: 10000;
   background-color: rgb(255, 255, 255);
   overflow: hidden;
   display: flex;
@@ -72,6 +72,7 @@ a {
   opacity: 0;
   list-style: none;
   cursor: pointer;
+  font-size: 3rem;
 
   margin-bottom: 1em;
   transition: 0.6s;
@@ -84,10 +85,8 @@ a {
   transform: translateX(0);
   opacity: 1;
   color: #0693e3;
-  font-size: 3rem;
 }
-.sidenav a {
-}
+
 /*  */
 /*  */
 .bar-container {
@@ -95,7 +94,7 @@ a {
   cursor: pointer;
   position: relative;
 
-  z-index: 200;
+  z-index: 20000;
 }
 .bar-container .bar1,
 .bar-container .bar2,
@@ -206,16 +205,22 @@ section {
 .social .social-icons {
   display: flex;
   width: 100%;
-  align-items: center;
 }
 .social .social-icons li {
+  transition: 0.6s;
   list-style: none;
+  align-items: center;
   margin: 0 2em;
 
   /* padding: 0.4em 0.6em; */
   /* width: 150px; */
   text-align: center;
   /* border: 3px solid white; */
+}
+
+.social-icons li:hover {
+  transform: scale(1.5);
+  transition: 0.6s;
 }
 .social .social-icons li a {
   color: white;
@@ -288,8 +293,8 @@ section {
   align-items: center;
 }
 .information p {
-  font-weight: bolder;
   font-size: 1.2rem;
+  word-spacing: 1.2px;
   height: 80%;
 }
 .info .imgBox {
@@ -323,12 +328,12 @@ section {
   border: none;
   outline: none;
   border-radius: 25px;
-  font-weight: lighter;
   letter-spacing: 1.4px;
   font-size: 0.8rem;
   padding: 0.9em 1.1em;
   margin-right: 1em;
   cursor: pointer;
+  font-weight: 600;
   white-space: nowrap;
   box-shadow: 0px 3px 16px 4px #7f36de8d;
 }
@@ -348,6 +353,7 @@ section {
   width: 100%;
 
   height: 100%;
+  overflow-y: unset;
 }
 .services h1 {
   text-align: center;
@@ -367,9 +373,10 @@ section {
   margin-top: 3em;
 }
 .card {
-  border: 4px solid #7f36de;
   padding: 1em 1.5em;
   width: 33.3333%;
+  background-color:#8a30ff;
+  color: white;
   margin: 1.5em;
   box-shadow: 3px 3px 16px 0px #7925e874;
 }
@@ -379,7 +386,7 @@ section {
 }
 .card h2 span {
   font-size: 2rem;
-  border-bottom: 4px solid black;
+  border-bottom: 4px solid rgb(255, 255, 255);
 }
 .card p {
   margin-top: 1.4em;
@@ -408,7 +415,7 @@ section {
   text-align: center;
 }
 .contact h1 span {
-  font-size: 4rem;
+  font-size: 3rem;
   color: #7f36de;
 }
 
@@ -416,10 +423,9 @@ section {
   margin: 0 auto;
   margin-top: 4em;
   height: 100%;
-  width: 100%;
+  width: 90%;
 
   font-family: "Poppins", sans-serif;
-  font-weight: 400;
   background-color: #fff;
 
   box-shadow: 3px 3px 16px 0px #7925e874;
@@ -437,12 +443,14 @@ section {
 .contact-card p {
   font-size: 1.2rem;
   margin: 0.8em 0;
+  
 }
 form {
   font-family: Poppins, serif;
   display: flex;
   flex-direction: column;
   width: 60%;
+  height: 100%;
   overflow: hidden;
 }
 
@@ -484,6 +492,7 @@ form button {
 
 .contacts-social ul li {
   list-style: none;
+  transition: 0.6s;
 }
 .contacts-social ul li a i {
   font-size: 1.5rem;
@@ -564,9 +573,10 @@ form button {
   transition: 0.4s;
 }
 .contact .change-pos {
-  background-color: white;
-  top: 18%;
-  left: 95%;
+  background-color: transparent;
+  top: 15%;
+  left: 93%;
+  transform: translate(-93%, -15%);
 }
 .contact .change-pos .bar1 {
   -webkit-transform: rotate(-45deg) translate(-9px, 6px);
@@ -644,6 +654,10 @@ form button {
   nav {
     padding: 0 2em;
   }
+  .sidenav.active ul li {
+    font-size: 2.2rem;
+  }
+
   .logo {
     font-size: 2.4rem;
   }
