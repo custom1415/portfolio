@@ -549,6 +549,7 @@ form button {
   background-color: #7f36deb1;
   padding: 0.7em;
   transition: 0.6s;
+  display: none;
 }
 .contact .bar-container .bar1,
 .contact .bar-container .bar2,
@@ -606,6 +607,9 @@ form button {
   }
 }
 @media (max-width: 800px) {
+  .contact .bar-container {
+    display: unset;
+  }
   .contact .float {
     transform: translate(200%, -50%);
     transform-origin: right;
