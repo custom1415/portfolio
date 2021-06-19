@@ -36,3 +36,8 @@ links.forEach((link) =>
   })
 );
 
+const contactBar = document.querySelector('.contact .bar-container')
+contactBar.addEventListener('click',()=>{
+  document.querySelector('.float').classList.toggle('scale')
+  contactBar.classList.toggle('change-pos')
+})
