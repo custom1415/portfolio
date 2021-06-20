@@ -248,7 +248,7 @@ section {
   width: 100%;
   position: relative;
 }
-.about-me::before {
+/* .about-me::before {
   position: absolute;
   content: "";
   top: 0;
@@ -258,7 +258,7 @@ section {
   background-color: #7925e874;
   clip-path: circle(400px at top right);
   z-index: -1;
-}
+} */
 
 .about-me h1 {
   text-align: center;
@@ -272,6 +272,8 @@ section {
   background-color: #fff;
   display: flex;
   justify-content: center;
+  width: 100%;
+  height: 100%;
   align-items: center;
   position: relative;
   padding: 0 1.3em;
@@ -291,7 +293,7 @@ section {
   width: 50%;
   color: #7f36de;
   margin-right: 3em;
-  height: 100%;
+  /* height: 100%; */
 
   padding: 4em 2em;
   display: flex;
@@ -300,25 +302,27 @@ section {
   align-items: center;
 }
 .information p {
+  margin-top: 1em;
   font-size: 1.2rem;
   word-spacing: 1.2px;
   height: 80%;
 }
 .info .imgBox {
-  width: 30%;
+  width: 23%;
   display: grid;
-  height: 100%;
+  height:70%;
   place-items: center;
   margin: 2em;
   position: relative;
+  z-index: 100;
 }
-.info .imgBox img {
+.info .imgBox canvas {
+  border: 6px solid rgb(255, 255, 255);
   width: 100%;
   height: 100%;
   position: relative;
   z-index: 2;
-  object-fit: cover;
-  border: 6px solid white;
+  /* object-fit: cover; */
 }
 .btn-container {
   width: 100%;
@@ -389,22 +393,19 @@ section {
   transition: 0.5s;
 }
 
-.card:hover{
-
+.card:hover {
   transform: translateY(-15px);
-
-
 }
 
-.card:nth-child(2) i{
+.card:nth-child(2) i {
   right: unset;
   left: 10%;
-  transform: translate(-10%,-10%);
+  transform: translate(-10%, -10%);
 }
 .card i {
   position: absolute;
   top: 10%;
-  right:10%;
+  right: 10%;
   transform: translate(10%, -10%);
   font-size: 5.5rem;
   z-index: -1;
@@ -460,15 +461,14 @@ section {
 
   box-shadow: 3px 3px 16px 0px #7925e874;
   padding: 2em 0 2em 4em;
-  
+
   position: relative;
   transition: 0.4s;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-.contact-card:hover{
-  
+.contact-card:hover {
   box-shadow: 4px 4px 16px 8px #7925e874;
 }
 
@@ -699,7 +699,7 @@ form button {
   }
   .info {
     flex-direction: column-reverse;
-    justify-content: center;
+    justify-content: space-between;
     padding-bottom: 4em;
   }
   .information {
@@ -783,6 +783,12 @@ form button {
 @media (max-width: 600px) {
   * {
     font-size: 12px;
+  }
+  .info {
+    justify-content: space-around;
+  }
+  .information p{
+    margin-top: 0;
   }
 }
 @media (max-width: 500px) {
